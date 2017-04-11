@@ -6,6 +6,6 @@ Inspired by sims-like interfaces but keeping to a modern parallax style fit for 
 <br><br>
 External plugins used:
 <br>
-`particles-js\n
-kalendae`
+```particles-js
+kalendae```
 
