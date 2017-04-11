@@ -1,0 +1,35 @@
+{
+  "hotel" : {
+    "rooms" : 130,
+    "roomTypes" : {
+      "single" : {
+        "available" : 30,
+        "cost" : 500
+        },
+      "single-superior" : {
+        "available" : 20,
+        "cost" : 800
+      },
+      "double" : {
+        "available" : 30,
+        "cost" : 850
+      },
+      "double-superior" : {
+        "available" : 20,
+        "cost" : 1500
+      },
+      "family" : {
+        "available" : 20,
+        "cost" : 1400
+      },
+      "family-superior" : {
+        "available" : 5,
+        "cost" : 1800
+      },
+      "triple" : {
+        "available" : 5,
+        "cost" : 1200
+      }
+    }
+  }
+}

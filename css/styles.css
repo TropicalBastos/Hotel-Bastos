@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body{
+  transition: all .5s ease-out;
+}
+
+.background{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateY(-50px);
+  /**background: url("back.jpg") no-repeat center fixed;
+  background-size: 100%;*/
+}
+
+#back{
+  position: relative;
+  width: 160%;
+  height: 160%;
+  left: -100px;
+}
+
+.big-title{
+  position: relative;
+  font-family: 'Macondo';
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #b8d9fb;
+  top: 160px;
+  transform: scaleY(1.3);
+  animation: fade-in 0.5s ease-in;
+  z-index: 2;
+}
+
+.mainWrapper{
+  position: absolute;
+  top: 400px;
+  width: 500px;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #81699d;
+  border: solid #846f97 2px;
+  border-radius: 6px;
+  opacity: 0.88;
+  transform: translateY(1000px);
+  animation: pop-in 0.8s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration-color: transparent;
+  z-index: 2;
+}
+
+.underliner:hover{
+  text-decoration: underline;
+  text-decoration-color: #c8e1ff;
+  transition: all 1s ease;
+}
+
+@keyframes pop-in{
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.mainWrapper h1{
+  font-family: 'Macondo';
+  color: #c8e1ff;
+}
+
+.formex{
+  background-color: #b8d9fb;
+  width: inherit;
+  height: auto;
+  transform: translateY(-400px);
+  display: none;
+  transition: all .5s ease-out;
+  cursor: default;
+}
+
+.open{
+  display: block;
+  animation: openAnimation .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes openAnimation{
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.darkBackground{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+.fadein{
+  animation: fade-in 1s;
+  animation-fill-mode: forwards;
+}
+
+.bubble-review{
+  background-color: #81699d;
+  width: 180px;
+  height: 180px;
+  padding: 20px;
+  border-radius: 50%;
+  font-family: 'Macondo';
+  text-align: center;
+  opacity: 0.88;
+  animation: fade-in 1s;
+  z-index:3;
+}
+
+.bubble-review:hover{
+  transform: scale(1.2,1.2);
+  transition: all 0.3s ease-in;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity:0.88;
+  }
+}
+
+.bubble-review p{
+  position: relative;
+  top: 20%;
+  font-size: 20px;
+}
+.bubble-review span{
+  color: #d0d3fe;
+}
+.bubble-review.r-1{
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  animation: pop-in-left 1.5s;
+}
+.bubble-review.r-2{
+  position: absolute;
+  right: 5%;
+  top: 30%;
+  width: 250px;
+  height: 250px;
+  animation: pop-in-right 1.5s;
+}
+.bubble-review.r-3{
+  position: absolute;
+  top:62%;
+  left:10%;
+  width: 220px;
+  height: 220px;
+  animation: pop-in-left 2s;
+}
+.bubble-review.r-4{
+  position: absolute;
+  top:60%;
+  right: 10%;
+  width: 230px;
+  height: 230px;
+  animation: pop-in-right 2s;
+}
+.bubble-review.r-5{
+  position: absolute;
+  top:2%;
+  right: 10%;
+  width: 230px;
+  height: 230px;
+  animation: pop-in-right 1s;
+}
+.bubble-review.r-6{
+  position: absolute;
+  top:15%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  animation: pop-in-left 1s;
+}
+
+@keyframes pop-in-left{
+  0%{
+    transform: translateX(-1000px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+@keyframes pop-in-right{
+  0%{
+    transform: translateX(1000px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+#particles-js{
+  position: absolute;
+  width:100%;
+  top: 70%;
+  z-index: 1;
+  height: 200px;
+}
+.svg-wrapper{
+  position: absolute;
+  margin:0 auto;
+  width: 300px;
+  left: 0;
+  right: 0;
+  top: 100px;
+  z-index: 2;
+}
+#logo{
+  z-index: 3;
+}
+.field{
+  float: left;
+  margin-left: 50px;
+}
+.form-field{
+  font-family: 'Macondo';
+  font-size: 18px;
+  font-weight: bold;
+}
+.field-two{
+  display: inline-block;
+}
+.field-three{
+  position: relative;
+  top: 20px;
+}
+#email{
+  width: 250px;
+}
+.reserve-button{
+  margin: 60px 0 50px 0;
+  height: 50px;
+  width: 150px;
+  font-family: 'Macondo';
+  font-size: 25px;
+  color: #b8d9fb;
+  display: inline-block;
+  background-color: #81699d;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+input{
+  height: 25px;
+  outline: none;
+  font-size: 16px;
+  width: 173px;
+  border-color: black;
+  border-width: 2px;
+}
+select{
+  height: 40px;
+  appearance: none;
+  border-color: black;
+  border-width: 2px;
+  font-family: 'Macondo';
+  font-weight: bold;
+  font-size: 18px;
+}
+.close-button{
+  background: url("../res/close.png");
+  background-size: 100%;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  right:0;
+  transition: all .5s ease;
+  opacity:0;
+  z-index:2;
+  cursor: pointer;
+}
+.entered-close{
+  opacity:1;
+  transition: all .5s ease;
+}
+
+.error{
+  font-family: 'Macondo';
+  color: red;
+  display: none;
+}
+
+#reserve-popup{
+  position: absolute;
+  left:0;
+  right:0;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #81699d;
+  opacity: 0.88;
+  z-index: 4;
+  height: auto;
+  text-align: center;
+  border-radius: 6px;
+  transform: translateY(-1000px);
+}
+.popped{
+  transform: translateY(500px) !important;
+  transition: transform .5s ease;
+}
+#reserve-popup h1{
+  font-family: 'Macondo';
+  color: #b8d9fb;
+}
+#reserve-popup .close-button{
+  opacity: 1;
+  z-index: 4 !important;
+  top: -75px !important;
+}
+#reserve-content{
+  position:relative;
+  background-color:#b8d9fb;
+  height: auto;
+}
+#content-data{
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Macondo';
+}
+#reserve-content button{
+  margin: 0 auto;
+}
+#availability{
+  font-size: 25px;
+}
+#context{
+  font-size: 18px;
+}
+#cost{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/** Media Queries **/
+
+@media screen and (max-width:1500px){
+  .bubble-review{
+    display: none;
+  }
+}
+
+@media screen and (max-width:1000px){
+  #back{
+    width:300% !important;
+    left: -500px;
+  }
+}
+
+@media screen and (max-width:1000px){
+  .big-title{
+    font-size: 75px;
+  }
+  svg{
+    transform: scale(0.5,0.5) translate(55px,-30px);
+  }
+}
+
+@media screen and (max-width:550px){
+  #back{
+    width:400% !important;
+  }
+  .svg-wrapper{
+    width: 250px;
+    transform: scale(2.8,2) translateY(-30px);
+  }
+}
+
+@media screen and (max-width:500px){
+  .mainWrapper{
+    border-radius: 0;
+    top: 480px !important;
+  }
+  input{
+    width: 100%;
+  }
+  .form-field{
+    position: relative;
+    width: 90%;
+    left: 4.3%;
+    margin: 0 auto;
+  }
+  #cal{
+    left: 0 !important;
+  }
+  .essentials{
+    left: 0 !important;
+  }
+  #email{
+    width: 100%;
+  }
+  select{
+    width: 100%;
+  }
+  .darkBackground{
+    opacity: 0.4;
+  }
+}
