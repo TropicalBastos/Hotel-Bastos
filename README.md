@@ -1,5 +1,5 @@
 # Hotel-Bastos
-A sleek, modern, responsive hotel front page reservation simulator, with front and back-end validation.
+A sleek, modern and responsive hotel front page reservation simulator, with front and back-end validation.
 Back end reservation system needs doing.
 <br>
 <br>
