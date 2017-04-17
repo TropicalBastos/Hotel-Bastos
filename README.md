@@ -12,3 +12,11 @@ particles-js
 kalendae
 ```
 
+<br><br>
+#### Home page screenshot:
+![alt text](screenshots/home.jpg?raw=true "Screenshot")
+<br>
+<br><br>
+#### Reserve menu:
+![alt text](screenshots/reserve.jpg?raw=true "Screenshot")
+
